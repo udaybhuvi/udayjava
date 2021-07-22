@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc =new Scanner(System.in);
+        int num = sc.nextInt();
+        int x = num%10;
+        if(num%2 == 0)
+        {
+            System.out.println("the number is even");
+            int num1 =num + x;
+            System.out.println("num1 :" +num1);
+        }
+        else
+        {
+            x=num%10;
+            int num2=num - x;
+            System.out.println("num2 :" +num2);
+        }
+    }
+}
